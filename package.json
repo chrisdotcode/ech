@@ -1,0 +1,17 @@
+{
+  "name": "ech",
+  "version": "1.0.0",
+  "description": "Echo Entire HTTP Requests in JSON.",
+  "main": "lib/index.js",
+  "bin": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "echo",
+    "server"
+  ],
+  "author": "Chris Blake <chris@code.sc> (https://code.sc)",
+  "license": "BSD-3-Clause"
+}
