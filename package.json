@@ -1,8 +1,9 @@
 {
   "name": "ech",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Echo Entire HTTP Requests in JSON.",
   "main": "lib/index.js",
+  "bin": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
