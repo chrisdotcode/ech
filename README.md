@@ -21,7 +21,14 @@ The idea is to make literally any request, and get your response back verbatim
 Usage
 -----
 
-	$ ech [port]
+	Usage: ech [options]
+
+	Options:
+
+		-h, --help     output usage information
+		-V, --version  output the version number
+		-p, --port     Specify port [default:8001]
+		-h, --host     Specify host [default:'0.0.0.0']
 
 Install
 -------
