@@ -52,7 +52,7 @@ $ curl 'http://user:pass@localhost:8001/p/a/t/h?query=string#hash' \
 	-d "source[cvc]=123"
 ```
 
-(Yes, that's from from Stripe's examples)
+(Yes, that's from from Stripe's examples).
 
 Result:
 ```json
@@ -107,5 +107,38 @@ Result:
 		"body": {}
 }
 ```
+
+### Example 3
+`ech` can parse both "application/x-www-form-urlencoded" and "application/json"
+form bodies, and does so for you automatically:
+
+```bash
+$ http :8001/users/new username=chrisdotcode email=chris@example.com password=1234
+```
+
+```json
+{
+    "body": {
+        "email": "chris@example.com",
+        "password": "1234",
+        "username": "chrisdotcode"
+    },
+    "fullQuery": "",
+    "fullUrl": "/users/new",
+    "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip, deflate, compress",
+        "content-length": "78",
+        "content-type": "application/json; charset=utf-8",
+        "host": "localhost:8001",
+        "user-agent": "HTTPie/0.8.0"
+    },
+    "ip": "127.0.0.1",
+    "method": "POST",
+    "query": {},
+    "url": "/users/new"
+}
+```
+
 - - -
 You get the idea.
